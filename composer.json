@@ -1,0 +1,25 @@
+{
+    "name": "linhchan/imgur",
+    "description": "This is a demo",
+    "authors": [
+        {
+            "name": "linh",
+            "email": "vanmylink@gmail.com"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Linhchan\\Imgur\\": "src/"  
+            }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Linhchan\\Imgur\\ImgurServiceProvider"
+            ]
+        }
+    }
+}
