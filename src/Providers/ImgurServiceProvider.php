@@ -30,7 +30,7 @@ class ImgurServiceProvider extends ServiceProvider
     {
         require dirname(__DIR__, 1).'/Routes/web.php';
         $this->publishes([
-            __DIR__ . '/../config/imgur.php' => config_path('imgur.php'),
+            dirname(__DIR__,2) . '/config/imgur.php' => config_path('imgur.php'),
         ], 'config');
 
     }
