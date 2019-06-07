@@ -39,6 +39,9 @@ jobs:
           paths:
             - ./vendor
       - run:
+          name: Running PHPCS
+          command: bash ./.circleci/phpcs.sh
+      - run:
           name: "Run tests"
           command: vendor/bin/phpunit --coverage-xml=build/coverage/coverage-xml --log-junit=build/coverage/phpunit.junit.xml --testdox
       - store_artifacts:

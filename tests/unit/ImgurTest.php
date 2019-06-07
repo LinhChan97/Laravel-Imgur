@@ -33,6 +33,35 @@ class ImgurTest extends TestCase
     }
     /**
      * @test
+     * @group imgur
+     */
+    public function it_should_set_all_and_work()
+    {
+        putenv('IMGUR_CLIENT_ID=c4ac74e51e89984');
+        $result = $this->controller->setHeaders([
+            'headers' => [
+                'authorization' => 'Client-ID ' . env('IMGUR_CLIENT_ID'),
+                'content-type' => 'application/x-www-form-urlencoded',
+            ]
+        ])->setFormParams([
+            'form_params' => [
+                'image' => self::$test_image,
+            ]
+        ])->upload(self::$test_image);
+        $this->assertEquals(200, $result->response->status);
+    }
+    /**
+     * @test
+     * @group imgur
+     */
+    public function it_should_get_specific_size()
+    {
+        $origin = "https://i.imgur.com/BO49tuZ.jpg";
+        $result = $this->controller->size($origin, 's');
+        $this->assertEquals("https://i.imgur.com/BO49tuZs.jpg", $result);
+    }
+    /**
+     * @test
      * @group ImgurController
      */
     public function it_should_upload_image()

@@ -216,7 +216,6 @@ class ImgurController
         }
         $delimiter = 'https://i.imgur.com/';
         $image = explode('.', explode($delimiter, $url)[1]);
-        die($image);
         return $delimiter . $image[0] . $size . '.' . $image[1];
     }
    
