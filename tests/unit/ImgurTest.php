@@ -21,17 +21,6 @@ class ImgurTest extends TestCase
         $this->controller = new ImgurController("c4ac74e51e89984", null);
         $this->object = $this->controller->upload(static::$test_image);
     }
-     /**
-     * @test
-     * @group ImgurController
-     */
-    public function it_should_upload_binary_file()
-    {
-        $expected = fopen(__DIR__.'/test.jpg', 'r');
-        var_dump($expected);
-        $result = ImgurController::version();
-        $this->assertEquals($expected, $result);
-    }
     /**
      * @test
      * @group ImgurController
