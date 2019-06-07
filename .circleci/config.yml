@@ -40,7 +40,8 @@ jobs:
             - ./vendor
       - run: mkdir data
       # run tests!
-      - run: ./vendor/bin/phpunit --log-junit ~/phpunit/junit.xml
+      # - run: ./vendor/bin/phpunit --log-junit ~/phpunit/junit.xml
+      - run: ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/ImgurTest --testdox
       - run: mkdir phpunit
       - store_test_results:
           path: ~/phpunit
