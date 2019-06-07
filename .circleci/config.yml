@@ -38,14 +38,6 @@ jobs:
           key: v1-dependencies-{{ checksum "composer.json" }}
           paths:
             - ./vendor
-      - restore_cache:
-          keys:
-            - node-v1-{{ checksum "package.json" }}
-            - node-v1-
-      - save_cache:
-          paths:
-            - ./vendor
-          key: v1-dependencies-{{ checksum "composer.json" }}
       - run: mkdir data
       # run tests!
       - run: ./vendor/bin/phpunit --log-junit ~/phpunit/junit.xml
