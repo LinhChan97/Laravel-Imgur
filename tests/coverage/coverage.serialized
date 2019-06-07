@@ -1,0 +1,495 @@
+<?php
+$coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
+$coverage->setData(array (
+  '/home/linh/Documents/composerws/linhchan/imgur/src/Http/Controllers/ImgurController.php' => 
+  array (
+    23 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    24 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    25 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    28 => 
+    array (
+    ),
+    29 => 
+    array (
+    ),
+    30 => NULL,
+    38 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+    ),
+    39 => NULL,
+    48 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    49 => 
+    array (
+    ),
+    51 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    52 => NULL,
+    61 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+    ),
+    62 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+    ),
+    63 => NULL,
+    71 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    74 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    75 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    79 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+    ),
+    80 => NULL,
+    89 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    90 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    91 => NULL,
+    99 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    102 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    106 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    107 => NULL,
+    110 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    111 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    112 => NULL,
+    121 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    122 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    123 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    124 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    125 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    126 => NULL,
+    135 => 
+    array (
+    ),
+    136 => 
+    array (
+    ),
+    137 => 
+    array (
+    ),
+    139 => 
+    array (
+    ),
+    140 => NULL,
+    148 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+    ),
+    149 => NULL,
+    157 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+    ),
+    158 => NULL,
+    166 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+    ),
+    167 => NULL,
+    175 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+    ),
+    176 => NULL,
+    184 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+    ),
+    185 => NULL,
+    194 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+    ),
+    195 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+    ),
+    196 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+    ),
+    197 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+    ),
+    198 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+    ),
+    200 => NULL,
+    203 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    204 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+    ),
+    205 => NULL,
+    214 => 
+    array (
+    ),
+    215 => 
+    array (
+    ),
+    217 => 
+    array (
+    ),
+    218 => 
+    array (
+    ),
+    219 => 
+    array (
+    ),
+    220 => NULL,
+    221 => NULL,
+  ),
+  '/home/linh/Documents/composerws/linhchan/imgur/src/Providers/ImgurServiceProvider.php' => 
+  array (
+    18 => 
+    array (
+    ),
+    19 => 
+    array (
+    ),
+    20 => 
+    array (
+    ),
+    21 => 
+    array (
+    ),
+    22 => 
+    array (
+    ),
+    31 => 
+    array (
+    ),
+    32 => 
+    array (
+    ),
+    33 => 
+    array (
+    ),
+    34 => 
+    array (
+    ),
+    36 => 
+    array (
+    ),
+  ),
+  '/home/linh/Documents/composerws/linhchan/imgur/src/Facades/Imgur.php' => 
+  array (
+    15 => 
+    array (
+    ),
+    16 => NULL,
+  ),
+  '/home/linh/Documents/composerws/linhchan/imgur/src/Routes/web.php' => 
+  array (
+    4 => 
+    array (
+    ),
+  ),
+));
+$coverage->setTests(array (
+  'UNCOVERED_FILES_FROM_WHITELIST' => 
+  array (
+    'size' => 'unknown',
+    'status' => -1,
+  ),
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+));
+
+$filter = $coverage->filter();
+$filter->setWhitelistedFiles(array (
+  '/home/linh/Documents/composerws/linhchan/imgur/src/Facades/Imgur.php' => true,
+  '/home/linh/Documents/composerws/linhchan/imgur/src/Http/Controllers/ImgurController.php' => true,
+  '/home/linh/Documents/composerws/linhchan/imgur/src/Providers/ImgurServiceProvider.php' => true,
+  '/home/linh/Documents/composerws/linhchan/imgur/src/Routes/web.php' => true,
+));
+
+return $coverage;

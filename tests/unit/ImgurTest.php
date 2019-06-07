@@ -1,13 +1,16 @@
 <?php
-namespace Linh\ImgurController\Test;
+namespace Linh\Imgur\Test\Unit;
 use GuzzleHttp\Exception\ClientException;
 use PHPUnit\Framework\TestCase;
-use Illuminate\Foundation\Testing\WithFaker;
-use Illuminate\Foundation\Testing\RefreshDatabase;
 use Linhchan\Imgur\Http\Controllers\ImgurController;
-use Linhchan\Imgur\Facades\Imgur;
+use Illuminate\Foundation\Application;
+use Illuminate\Support\Facades\Facade;
 
-class ImgurControllerTest extends TestCase
+$app = new Application(); // Create a facade root, perhaps in setup()
+$app->singleton('app', Application::class);
+Facade::setFacadeApplication($app);
+
+class ImgurTest extends TestCase
 {
     private static $test_image = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png';
     private $object;
@@ -17,6 +20,17 @@ class ImgurControllerTest extends TestCase
         parent::setUp();
         $this->controller = new ImgurController("c4ac74e51e89984", null);
         $this->object = $this->controller->upload(static::$test_image);
+    }
+     /**
+     * @test
+     * @group ImgurController
+     */
+    public function it_should_upload_binary_file()
+    {
+        $expected = fopen(__DIR__.'/test.jpg', 'r');
+        var_dump($expected);
+        $result = ImgurController::version();
+        $this->assertEquals($expected, $result);
     }
     /**
      * @test
