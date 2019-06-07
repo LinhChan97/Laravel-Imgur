@@ -38,19 +38,9 @@ jobs:
           key: v1-dependencies-{{ checksum "composer.json" }}
           paths:
             - ./vendor
-      - run: mkdir data
-      # run tests!
-      # - run: ./vendor/bin/phpunit --log-junit ~/phpunit/junit.xml
-      - run: ./vendor/bin/phpunit --bootstrap vendor/autoload.php tests/ImgurTest --testdox
-      - run: mkdir phpunit
-      - store_test_results:
-          path: ~/phpunit
-      - store_artifacts:
-          path: ~/phpunit
-      # run tests and report!
       - run:
           name: "Run tests"
-          command: phpdbg -qrr vendor/bin/phpunit --coverage-html build/coverage-report
+          command: vendor/bin/phpunit --coverage-xml=build/coverage/coverage-xml --log-junit=build/coverage/phpunit.junit.xml --testdox
       - store_artifacts:
           path:  build/coverage-report
 
