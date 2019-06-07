@@ -3,7 +3,7 @@ namespace Linhchan\Imgur\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
-class Upload extends Facade
+class Imgur extends Facade
 {
     protected static function getFacadeAccessor()
     {

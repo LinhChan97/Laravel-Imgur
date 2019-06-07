@@ -1,13 +1,13 @@
 <?php
 
-namespace Linhchan\Imgur;
+namespace Linhchan\Imgur\Http\Controllers;
 
 use GuzzleHttp\Client;
 use InvalidArgumentException;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Http\Request;
 
-class ImgurController
+class ImgurController 
 {
     protected $url = 'https://api.imgur.com/3/image';
     protected $headers = [];
@@ -18,7 +18,7 @@ class ImgurController
     private $client_id;
     private $client_secret;
     private $image;
-    public function __construct($client_id, $client_secret)
+    public function __construct($client_id, $client_secret=null)
     {
         $this->client_id = $client_id;
         $this->client_secret = $client_secret;
@@ -71,7 +71,7 @@ class ImgurController
         if (empty($this->headers)) {
             return [
                 'headers' => [
-                    'authorization' => 'Client-ID ' . env('IMGUR_CLIENT_ID'),
+                    'authorization' => 'Client-ID ' . $this->client_id,
                     'content-type' => 'application/x-www-form-urlencoded',
                 ]
             ];
@@ -120,7 +120,7 @@ class ImgurController
     {
         $client = new Client();
         $this->setImage($this->fileType($image));
-        $response = $client->request('POST', $this->url, array_merge($this->getHeaders(), $this->getFormParams()));
+        $response = $client->request('POST', $this->url, array_merge( $this->getHeaders(), $this->getFormParams()));
         $this->setResponse(json_decode($response->getBody()->getContents()));
         return $this;
     }
@@ -216,6 +216,7 @@ class ImgurController
         }
         $delimiter = 'https://i.imgur.com/';
         $image = explode('.', explode($delimiter, $url)[1]);
+        die($image);
         return $delimiter . $image[0] . $size . '.' . $image[1];
     }
    
