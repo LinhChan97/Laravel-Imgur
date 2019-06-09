@@ -5,6 +5,17 @@ namespace Linhchan\Imgur;
 use Illuminate\Support\ServiceProvider;
 use Linhchan\Imgur\ImgurController;
 
+/**
+ * Imgur Service Provider class
+ *
+ * The class provide service
+ *
+ * @category Imgur
+ * @package  Imgur
+ * @author   Linh Van <vanmylink@gmail.com>
+ * @license  http://example.org/licenses/gpl-license.php GNU Public License
+ * @link     http://example.com/imgur/upload
+ */
 class ImgurServiceProvider extends ServiceProvider
 {
     /**
@@ -14,11 +25,14 @@ class ImgurServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(Imgur::class, function ($app) {
-            $client_id = $app['config']->get('imgur.client_id');
-            $client_secret = $app['config']->get('imgur.client_secret');
-            return new Imgur($client_id, $client_secret);
-        });
+        $this->app->bind(
+            Imgur::class,
+            function ($app) {
+                $client_id = $app['config']->get('imgur.client_id');
+                $client_secret = $app['config']->get('imgur.client_secret');
+                return new Imgur($client_id, $client_secret);
+            }
+        );
     }
 
     /**
@@ -28,9 +42,11 @@ class ImgurServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        $this->publishes([
-            dirname(__DIR__,2) . '/config/imgur.php' => config_path('imgur.php'),
-        ], 'config');
-
+        $this->publishes(
+            [
+                dirname(__DIR__, 2) . '/config/imgur.php' => config_path('imgur.php'),
+            ],
+            'config'
+        );
     }
 }

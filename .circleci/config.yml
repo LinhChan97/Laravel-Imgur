@@ -18,6 +18,17 @@ jobs:
       #
       # - image: redis:2.8.19
 
+  deploy:
+    docker:
+      - image: buildpack-deps:trusty
+    steps:
+      - checkout
+      - run:
+          name: Deploy Master to Heroku
+          command: |
+            git push hhttps://git.heroku.com/linhchan-laravel-imgur.git master
+
+
     steps:
       - checkout
 
@@ -43,7 +54,5 @@ jobs:
       - run:
           name: "Run tests"
           command: vendor/bin/phpunit --coverage-xml=build/coverage/coverage-xml --log-junit=build/coverage/phpunit.junit.xml --testdox
-      - store_artifacts:
-          path:  build/coverage-report
 
 

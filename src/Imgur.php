@@ -7,7 +7,18 @@ use InvalidArgumentException;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Http\Request;
 
-class Imgur 
+/**
+ * Imgur class
+ *
+ * The class holding the root upload method 
+ *
+ * @category Imgur
+ * @package  Imgur
+ * @author   Linh Van <vanmylink@gmail.com>
+ * @license  http://example.org/licenses/gpl-license.php GNU Public License
+ * @link     http://example.com/imgur/upload
+ */
+class Imgur
 {
     protected $url = 'https://api.imgur.com/3/image';
     protected $headers = [];
@@ -18,7 +29,7 @@ class Imgur
     private $client_id;
     private $client_secret;
     private $image;
-    public function __construct($client_id, $client_secret=null)
+    public function __construct($client_id, $client_secret = null)
     {
         $this->client_id = $client_id;
         $this->client_secret = $client_secret;
@@ -35,7 +46,7 @@ class Imgur
     /**
      * If concrete instance UploadedFile, it should transform base64, either return url.
      *
-     * @param $image
+     * @param  $image
      * @return string
      */
     public function fileType($image)
@@ -48,7 +59,7 @@ class Imgur
     /**
      * Set headers.
      *
-     * @param $headers
+     * @param  $headers
      * @return $this
      */
     public function setHeaders($headers)
@@ -76,7 +87,7 @@ class Imgur
     /**
      * Set form params.
      *
-     * @param $params
+     * @param  $params
      * @return $this
      */
     public function setFormParams($params)
@@ -108,14 +119,14 @@ class Imgur
     /**
      * Main entrance point.
      *
-     * @param $image
+     * @param  $image
      * @return $this
      */
     public function upload($image)
     {
         $client = new Client();
         $this->setImage($this->fileType($image));
-        $response = $client->request('POST', $this->url, array_merge( $this->getHeaders(), $this->getFormParams()));
+        $response = $client->request('POST', $this->url, array_merge($this->getHeaders(), $this->getFormParams()));
         $this->setResponse(json_decode($response->getBody()->getContents()));
         return $this;
     }
@@ -186,8 +197,9 @@ class Imgur
     }
     /**
      * Imgur image size.
-     * @param $url
-     * @param $size
+     *
+     * @param  $url
+     * @param  $size
      * @return string
      */
     public function size($url, $size)
@@ -199,5 +211,4 @@ class Imgur
         $image = explode('.', explode($delimiter, $url)[1]);
         return $delimiter . $image[0] . $size . '.' . $image[1];
     }
-   
 }

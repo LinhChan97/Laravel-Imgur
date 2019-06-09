@@ -92,16 +92,20 @@ class ImgurTest extends TestCase
     public function testSetUpRequestInfoSuccess()
     {
         putenv('IMGUR_CLIENT_ID=c4ac74e51e89984');
-        $result = $this->controller->setHeaders([
+        $result = $this->controller->setHeaders(
+            [
             'headers' => [
                 'authorization' => 'Client-ID ' . env('IMGUR_CLIENT_ID'),
                 'content-type' => 'application/x-www-form-urlencoded',
             ]
-        ])->setFormParams([
-            'form_params' => [
-                'image' => self::$test_image,
             ]
-        ])->upload(self::$test_image);
+        )->setFormParams(
+            [
+                'form_params' => [
+                'image' => self::$test_image,
+                ]
+                ]
+        )->upload(self::$test_image);
         $this->assertEquals(200, $result->response->status);
     }
     /**
@@ -159,13 +163,15 @@ class ImgurTest extends TestCase
      */
     public function testGetUsualSucceess()
     {
-        $this->assertEquals([
+        $this->assertEquals(
+            [
             'link' => $this->object->response->data->link,
             'filesize' => $this->object->response->data->size,
             'type' => $this->object->response->data->type,
             'width' => $this->object->response->data->width,
             'height' => $this->object->response->data->height,
-        ], $this->object->usual());
+            ], $this->object->usual()
+        );
     }
     /**
      * @test
