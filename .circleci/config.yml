@@ -26,7 +26,7 @@ jobs:
       - run:
           name: Deploy Master to Heroku
           command: |
-            git push hhttps://git.heroku.com/linhchan-laravel-imgur.git master
+            git push https://git.heroku.com/linhchan-laravel-imgur.git master
 
 
     steps:
