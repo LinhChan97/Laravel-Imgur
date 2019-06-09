@@ -1,13 +1,13 @@
 <?php
 
-namespace Linhchan\Imgur\Http\Controllers;
+namespace Linhchan\Imgur;
 
 use GuzzleHttp\Client;
 use InvalidArgumentException;
 use Illuminate\Http\UploadedFile;
 use Illuminate\Http\Request;
 
-class ImgurController 
+class Imgur 
 {
     protected $url = 'https://api.imgur.com/3/image';
     protected $headers = [];
@@ -22,11 +22,6 @@ class ImgurController
     {
         $this->client_id = $client_id;
         $this->client_secret = $client_secret;
-    }
-    public function setSize($size)
-    {
-        $this->size = $size;
-        return $this;
     }
     /**
      * Check API version.
@@ -43,7 +38,7 @@ class ImgurController
      * @param $image
      * @return string
      */
-    private function fileType($image)
+    public function fileType($image)
     {
         if ($image instanceof UploadedFile) {
             return base64_encode(file_get_contents($image->path()));
@@ -123,20 +118,6 @@ class ImgurController
         $response = $client->request('POST', $this->url, array_merge( $this->getHeaders(), $this->getFormParams()));
         $this->setResponse(json_decode($response->getBody()->getContents()));
         return $this;
-    }
-    /**
-     * upload API
-     * 
-     * @param $request
-     * @return $this
-     */
-    public function uploadImage(Request $request)
-    {
-        if($image = $request->file('image')){
-            $response = $this->upload($image);
-            return $response->usual();
-        }
-        return ['nothing uploaded'];
     }
     /**
      * get uploaded image link.

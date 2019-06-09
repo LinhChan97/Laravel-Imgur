@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1559900706">
-  <project timestamp="1559900706">
+<coverage generated="1560095555">
+  <project timestamp="1560095555">
     <package name="Linhchan\Imgur\Facades">
       <file name="/home/linh/Documents/composerws/linhchan/imgur/src/Facades/Imgur.php">
         <class name="Linhchan\Imgur\Facades\Imgur" namespace="Linhchan\Imgur\Facades">
@@ -11,85 +11,75 @@
         <metrics loc="17" ncloc="12" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="2" coveredelements="0"/>
       </file>
     </package>
-    <package name="Linhchan\Imgur\Http\Controllers">
-      <file name="/home/linh/Documents/composerws/linhchan/imgur/src/Http/Controllers/ImgurController.php">
-        <class name="Linhchan\Imgur\Http\Controllers\ImgurController" namespace="Linhchan\Imgur\Http\Controllers">
-          <metrics complexity="24" methods="19" coveredmethods="15" conditionals="0" coveredconditionals="0" statements="48" coveredstatements="40" elements="67" coveredelements="55"/>
-        </class>
-        <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="12"/>
-        <line num="23" type="stmt" count="12"/>
-        <line num="24" type="stmt" count="12"/>
-        <line num="25" type="stmt" count="12"/>
-        <line num="26" type="method" name="setSize" visibility="public" complexity="1" crap="2.00" count="0"/>
-        <line num="28" type="stmt" count="0"/>
-        <line num="29" type="stmt" count="0"/>
-        <line num="36" type="method" name="version" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="38" type="stmt" count="1"/>
-        <line num="46" type="method" name="fileType" visibility="private" complexity="2" crap="2.15" count="12"/>
-        <line num="48" type="stmt" count="12"/>
-        <line num="49" type="stmt" count="0"/>
-        <line num="51" type="stmt" count="12"/>
-        <line num="59" type="method" name="setHeaders" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="61" type="stmt" count="2"/>
-        <line num="62" type="stmt" count="2"/>
-        <line num="69" type="method" name="getHeaders" visibility="private" complexity="2" crap="2" count="12"/>
-        <line num="71" type="stmt" count="12"/>
-        <line num="74" type="stmt" count="12"/>
-        <line num="75" type="stmt" count="12"/>
-        <line num="79" type="stmt" count="2"/>
-        <line num="87" type="method" name="setFormParams" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="89" type="stmt" count="2"/>
-        <line num="90" type="stmt" count="2"/>
-        <line num="97" type="method" name="getFormParams" visibility="private" complexity="2" crap="2" count="12"/>
-        <line num="99" type="stmt" count="12"/>
-        <line num="102" type="stmt" count="12"/>
-        <line num="106" type="stmt" count="2"/>
-        <line num="108" type="method" name="setImage" visibility="private" complexity="1" crap="1" count="12"/>
-        <line num="110" type="stmt" count="12"/>
-        <line num="111" type="stmt" count="12"/>
-        <line num="119" type="method" name="upload" visibility="public" complexity="1" crap="1" count="12"/>
-        <line num="121" type="stmt" count="12"/>
-        <line num="122" type="stmt" count="12"/>
-        <line num="123" type="stmt" count="12"/>
-        <line num="124" type="stmt" count="12"/>
-        <line num="125" type="stmt" count="12"/>
-        <line num="133" type="method" name="uploadImage" visibility="public" complexity="2" crap="6.00" count="0"/>
-        <line num="135" type="stmt" count="0"/>
-        <line num="136" type="stmt" count="0"/>
-        <line num="137" type="stmt" count="0"/>
-        <line num="139" type="stmt" count="0"/>
-        <line num="146" type="method" name="link" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="148" type="stmt" count="2"/>
-        <line num="155" type="method" name="filesize" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="157" type="stmt" count="2"/>
-        <line num="164" type="method" name="type" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="166" type="stmt" count="2"/>
-        <line num="173" type="method" name="width" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="175" type="stmt" count="2"/>
-        <line num="182" type="method" name="height" visibility="public" complexity="1" crap="1" count="2"/>
-        <line num="184" type="stmt" count="2"/>
-        <line num="191" type="method" name="usual" visibility="public" complexity="1" crap="1" count="1"/>
-        <line num="194" type="stmt" count="1"/>
-        <line num="195" type="stmt" count="1"/>
-        <line num="196" type="stmt" count="1"/>
-        <line num="197" type="stmt" count="1"/>
-        <line num="198" type="stmt" count="1"/>
-        <line num="201" type="method" name="setResponse" visibility="private" complexity="1" crap="1" count="12"/>
-        <line num="203" type="stmt" count="12"/>
-        <line num="204" type="stmt" count="12"/>
-        <line num="212" type="method" name="size" visibility="public" complexity="2" crap="2.03" count="1"/>
-        <line num="214" type="stmt" count="1"/>
-        <line num="215" type="stmt" count="0"/>
-        <line num="217" type="stmt" count="1"/>
-        <line num="218" type="stmt" count="1"/>
-        <line num="219" type="stmt" count="1"/>
-        <metrics loc="222" ncloc="141" classes="1" methods="19" coveredmethods="15" conditionals="0" coveredconditionals="0" statements="48" coveredstatements="40" elements="67" coveredelements="55"/>
-      </file>
-    </package>
     <package name="Linhchan\Imgur">
+      <file name="/home/linh/Documents/composerws/linhchan/imgur/src/Imgur.php">
+        <class name="Linhchan\Imgur\Imgur" namespace="Linhchan\Imgur">
+          <metrics complexity="21" methods="17" coveredmethods="17" conditionals="0" coveredconditionals="0" statements="42" coveredstatements="42" elements="59" coveredelements="59"/>
+        </class>
+        <line num="21" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="23" type="stmt" count="15"/>
+        <line num="24" type="stmt" count="15"/>
+        <line num="25" type="stmt" count="15"/>
+        <line num="31" type="method" name="version" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="33" type="stmt" count="1"/>
+        <line num="41" type="method" name="fileType" visibility="public" complexity="2" crap="2" count="15"/>
+        <line num="43" type="stmt" count="15"/>
+        <line num="44" type="stmt" count="1"/>
+        <line num="46" type="stmt" count="15"/>
+        <line num="54" type="method" name="setHeaders" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="56" type="stmt" count="2"/>
+        <line num="57" type="stmt" count="2"/>
+        <line num="64" type="method" name="getHeaders" visibility="private" complexity="2" crap="2" count="15"/>
+        <line num="66" type="stmt" count="15"/>
+        <line num="69" type="stmt" count="15"/>
+        <line num="70" type="stmt" count="15"/>
+        <line num="74" type="stmt" count="2"/>
+        <line num="82" type="method" name="setFormParams" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="84" type="stmt" count="2"/>
+        <line num="85" type="stmt" count="2"/>
+        <line num="92" type="method" name="getFormParams" visibility="private" complexity="2" crap="2" count="15"/>
+        <line num="94" type="stmt" count="15"/>
+        <line num="97" type="stmt" count="15"/>
+        <line num="101" type="stmt" count="2"/>
+        <line num="103" type="method" name="setImage" visibility="private" complexity="1" crap="1" count="15"/>
+        <line num="105" type="stmt" count="15"/>
+        <line num="106" type="stmt" count="15"/>
+        <line num="114" type="method" name="upload" visibility="public" complexity="1" crap="1" count="15"/>
+        <line num="116" type="stmt" count="15"/>
+        <line num="117" type="stmt" count="15"/>
+        <line num="118" type="stmt" count="15"/>
+        <line num="119" type="stmt" count="15"/>
+        <line num="120" type="stmt" count="15"/>
+        <line num="127" type="method" name="link" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="129" type="stmt" count="2"/>
+        <line num="136" type="method" name="filesize" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="138" type="stmt" count="2"/>
+        <line num="145" type="method" name="type" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="147" type="stmt" count="2"/>
+        <line num="154" type="method" name="width" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="156" type="stmt" count="2"/>
+        <line num="163" type="method" name="height" visibility="public" complexity="1" crap="1" count="2"/>
+        <line num="165" type="stmt" count="2"/>
+        <line num="172" type="method" name="usual" visibility="public" complexity="1" crap="1" count="1"/>
+        <line num="175" type="stmt" count="1"/>
+        <line num="176" type="stmt" count="1"/>
+        <line num="177" type="stmt" count="1"/>
+        <line num="178" type="stmt" count="1"/>
+        <line num="179" type="stmt" count="1"/>
+        <line num="182" type="method" name="setResponse" visibility="private" complexity="1" crap="1" count="15"/>
+        <line num="184" type="stmt" count="15"/>
+        <line num="185" type="stmt" count="15"/>
+        <line num="193" type="method" name="size" visibility="public" complexity="2" crap="2" count="2"/>
+        <line num="195" type="stmt" count="2"/>
+        <line num="196" type="stmt" count="1"/>
+        <line num="198" type="stmt" count="1"/>
+        <line num="199" type="stmt" count="1"/>
+        <line num="200" type="stmt" count="1"/>
+        <metrics loc="203" ncloc="128" classes="1" methods="17" coveredmethods="17" conditionals="0" coveredconditionals="0" statements="42" coveredstatements="42" elements="59" coveredelements="59"/>
+      </file>
       <file name="/home/linh/Documents/composerws/linhchan/imgur/src/Providers/ImgurServiceProvider.php">
         <class name="Linhchan\Imgur\ImgurServiceProvider" namespace="Linhchan\Imgur">
-          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="12" coveredelements="0"/>
+          <metrics complexity="2" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
         </class>
         <line num="15" type="method" name="register" visibility="public" complexity="1" crap="2.00" count="0"/>
         <line num="18" type="stmt" count="0"/>
@@ -101,15 +91,10 @@
         <line num="31" type="stmt" count="0"/>
         <line num="32" type="stmt" count="0"/>
         <line num="33" type="stmt" count="0"/>
-        <line num="34" type="stmt" count="0"/>
-        <line num="36" type="stmt" count="0"/>
-        <metrics loc="37" ncloc="27" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="10" coveredstatements="0" elements="12" coveredelements="0"/>
+        <line num="35" type="stmt" count="0"/>
+        <metrics loc="36" ncloc="26" classes="1" methods="2" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="9" coveredstatements="0" elements="11" coveredelements="0"/>
       </file>
     </package>
-    <file name="/home/linh/Documents/composerws/linhchan/imgur/src/Routes/web.php">
-      <line num="4" type="stmt" count="0"/>
-      <metrics loc="4" ncloc="4" classes="0" methods="0" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="1" coveredstatements="0" elements="1" coveredelements="0"/>
-    </file>
-    <metrics files="4" loc="280" ncloc="184" classes="3" methods="22" coveredmethods="15" conditionals="0" coveredconditionals="0" statements="60" coveredstatements="40" elements="82" coveredelements="55"/>
+    <metrics files="3" loc="256" ncloc="166" classes="3" methods="20" coveredmethods="17" conditionals="0" coveredconditionals="0" statements="52" coveredstatements="42" elements="72" coveredelements="59"/>
   </project>
 </coverage>

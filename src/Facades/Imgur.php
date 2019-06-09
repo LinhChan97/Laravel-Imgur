@@ -12,6 +12,6 @@ class Imgur extends Facade
      */
     protected static function getFacadeAccessor()
     {
-        return \Linhchan\Imgur\Http\Controllers\ImgurController::class;
+        return \Linhchan\Imgur\Imgur::class;
     }
 }

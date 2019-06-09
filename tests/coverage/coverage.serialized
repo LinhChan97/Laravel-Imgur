@@ -1,430 +1,470 @@
 <?php
 $coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
 $coverage->setData(array (
-  '/home/linh/Documents/composerws/linhchan/imgur/src/Http/Controllers/ImgurController.php' => 
+  '/home/linh/Documents/composerws/linhchan/imgur/src/Imgur.php' => 
   array (
     23 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
     24 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
     25 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    28 => 
+    33 => 
     array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
     ),
-    29 => 
+    34 => NULL,
+    43 => 
     array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    30 => NULL,
-    38 => 
+    44 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
     ),
-    39 => NULL,
-    48 => 
+    46 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    49 => 
+    47 => NULL,
+    56 => 
     array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
     ),
-    51 => 
+    57 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
     ),
-    52 => NULL,
-    61 => 
+    58 => NULL,
+    66 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    62 => 
+    69 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    63 => NULL,
-    71 => 
+    70 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
     74 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
     ),
-    75 => 
+    75 => NULL,
+    84 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    79 => 
+    85 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    80 => NULL,
-    89 => 
+    86 => NULL,
+    94 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    90 => 
+    97 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    91 => NULL,
-    99 => 
+    101 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    102 => 
+    102 => NULL,
+    105 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
     106 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
     107 => NULL,
-    110 => 
+    116 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    111 => 
+    117 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    112 => NULL,
-    121 => 
+    118 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    122 => 
+    119 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    123 => 
+    120 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    124 => 
+    121 => NULL,
+    129 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
     ),
-    125 => 
+    130 => NULL,
+    138 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
     ),
-    126 => NULL,
-    135 => 
+    139 => NULL,
+    147 => 
     array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
     ),
-    136 => 
+    148 => NULL,
+    156 => 
     array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
     ),
-    137 => 
+    157 => NULL,
+    165 => 
     array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
     ),
-    139 => 
-    array (
-    ),
-    140 => NULL,
-    148 => 
-    array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-    ),
-    149 => NULL,
-    157 => 
-    array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-    ),
-    158 => NULL,
-    166 => 
-    array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-    ),
-    167 => NULL,
+    166 => NULL,
     175 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
     ),
-    176 => NULL,
+    176 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+    ),
+    177 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+    ),
+    178 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+    ),
+    179 => 
+    array (
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+    ),
+    181 => NULL,
     184 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
-    185 => NULL,
-    194 => 
+    185 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
+      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess',
+      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess',
+      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess',
+      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess',
+      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess',
+      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess',
+      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess',
+      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess',
+      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess',
+      12 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess',
+      13 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader',
+      14 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam',
     ),
+    186 => NULL,
     195 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
+      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
     ),
     196 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-    ),
-    197 => 
-    array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize',
     ),
     198 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
     ),
-    200 => NULL,
-    203 => 
+    199 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
     ),
-    204 => 
+    200 => 
     array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version',
-      1 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work',
-      2 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-      3 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image',
-      4 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link',
-      5 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size',
-      6 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type',
-      7 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width',
-      8 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height',
-      9 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual',
-      10 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header',
-      11 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params',
+      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize',
     ),
-    205 => NULL,
-    214 => 
-    array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-    ),
-    215 => 
-    array (
-    ),
-    217 => 
-    array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-    ),
-    218 => 
-    array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-    ),
-    219 => 
-    array (
-      0 => 'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size',
-    ),
-    220 => NULL,
+    201 => NULL,
   ),
   '/home/linh/Documents/composerws/linhchan/imgur/src/Providers/ImgurServiceProvider.php' => 
   array (
@@ -452,10 +492,7 @@ $coverage->setData(array (
     33 => 
     array (
     ),
-    34 => 
-    array (
-    ),
-    36 => 
+    35 => 
     array (
     ),
   ),
@@ -466,12 +503,6 @@ $coverage->setData(array (
     ),
     16 => NULL,
   ),
-  '/home/linh/Documents/composerws/linhchan/imgur/src/Routes/web.php' => 
-  array (
-    4 => 
-    array (
-    ),
-  ),
 ));
 $coverage->setTests(array (
   'UNCOVERED_FILES_FROM_WHITELIST' => 
@@ -479,62 +510,77 @@ $coverage->setTests(array (
     'size' => 'unknown',
     'status' => -1,
   ),
-  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_see_version' => 
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileLocalSuccess' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_set_all_and_work' => 
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSpecificFileSize' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_specific_size' => 
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithWrongSize' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_upload_image' => 
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSeeVersionSuccess' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_link' => 
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadFileSuccess' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_size' => 
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testSetUpRequestInfoSuccess' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_type' => 
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testUploadImageSuccess' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_width' => 
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetLinkSuccess' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_height' => 
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetSizeSuccess' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_usual' => 
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetTypeSuccess' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_header' => 
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetWidthSuccess' => 
   array (
     'size' => 'unknown',
     'status' => 0,
   ),
-  'Linh\\Imgur\\Test\\Unit\\ImgurTest::it_should_get_exception_with_params' => 
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetHeightSuccess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetUsualSucceess' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithHeader' => 
+  array (
+    'size' => 'unknown',
+    'status' => 0,
+  ),
+  'Linh\\Imgur\\Test\\Unit\\ImgurTest::testGetExceptionWithParam' => 
   array (
     'size' => 'unknown',
     'status' => 0,
@@ -544,9 +590,8 @@ $coverage->setTests(array (
 $filter = $coverage->filter();
 $filter->setWhitelistedFiles(array (
   '/home/linh/Documents/composerws/linhchan/imgur/src/Facades/Imgur.php' => true,
-  '/home/linh/Documents/composerws/linhchan/imgur/src/Http/Controllers/ImgurController.php' => true,
+  '/home/linh/Documents/composerws/linhchan/imgur/src/Imgur.php' => true,
   '/home/linh/Documents/composerws/linhchan/imgur/src/Providers/ImgurServiceProvider.php' => true,
-  '/home/linh/Documents/composerws/linhchan/imgur/src/Routes/web.php' => true,
 ));
 
 return $coverage;

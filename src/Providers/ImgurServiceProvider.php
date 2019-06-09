@@ -14,10 +14,10 @@ class ImgurServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->app->bind(ImgurController::class, function ($app) {
+        $this->app->bind(Imgur::class, function ($app) {
             $client_id = $app['config']->get('imgur.client_id');
             $client_secret = $app['config']->get('imgur.client_secret');
-            return new ImgurController($client_id, $client_secret);
+            return new Imgur($client_id, $client_secret);
         });
     }
 
@@ -28,7 +28,6 @@ class ImgurServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        require dirname(__DIR__, 1).'/Routes/web.php';
         $this->publishes([
             dirname(__DIR__,2) . '/config/imgur.php' => config_path('imgur.php'),
         ], 'config');
