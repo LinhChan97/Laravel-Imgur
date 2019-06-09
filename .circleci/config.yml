@@ -21,8 +21,6 @@ jobs:
   deploy:
     docker:
       - image: buildpack-deps:trusty
-    steps:
-      - checkout
       - run:
           name: Deploy Master to Heroku
           command: |
@@ -31,7 +29,6 @@ jobs:
 
     steps:
       - checkout
-
       - run: sudo apt update # PHP CircleCI 2.0 Configuration File# PHP CircleCI 2.0 Configuration File sudo apt install zlib1g-dev libsqlite3-dev
       - run: sudo docker-php-ext-install zip
 
