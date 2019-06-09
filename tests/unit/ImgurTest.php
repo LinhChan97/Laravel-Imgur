@@ -8,6 +8,13 @@ use Illuminate\Foundation\Application;
 use InvalidArgumentException;
 use Illuminate\Support\Facades\Facade;
 
+/**
+ * Class test Imgur class
+ * 
+ * @category Library
+ * @package  Imgur
+ * @author   linhchan <vanmylink@gmail.com>
+ */
 class ImgurTest extends TestCase
 {
     private static $test_image = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png';
