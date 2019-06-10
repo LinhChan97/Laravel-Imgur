@@ -19,10 +19,13 @@ composer require linhchan/imgur
 
 ```bash
 In config/app.php
+
 Add service provider to your app.php [Providers]
+...
 Linhchan\Imgur\ImgurServiceProvider::class,
 
 Binding class using Facade in laravel app.php [Aliases]
+...
 'Imgur' => Linhchan\Imgur\Facades\Imgur::class,
 ```
 
