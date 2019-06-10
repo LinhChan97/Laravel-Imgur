@@ -46,7 +46,10 @@ jobs:
             - ./vendor
       - run: 
           name: "Run phpcs fixer"
-          command: vendor/bin/phpcs -n tests/unit
+          command: vendor/bin/phpcs -n src/ tests/unit/
+      - run:
+          name: "Run phpmd fixer"
+          command: vendor/bin/phpmd src/ html unusedcode --reportfile phpmd.html
       - run:
           name: "Run tests"
           command: vendor/bin/phpunit --coverage-clover=coverage.xml

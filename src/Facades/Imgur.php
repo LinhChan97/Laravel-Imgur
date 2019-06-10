@@ -2,7 +2,7 @@
 /**
  * Imgur class
  *
- * The facade class
+ * PHP version 7
  *
  * @category Imgur
  * @package  Imgur

@@ -2,7 +2,7 @@
 /**
  * Imgur Service Provider class
  *
- * The class provide service
+ * PHP version 7
  *
  * @category Imgur
  * @package  Imgur

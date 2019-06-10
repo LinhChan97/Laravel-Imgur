@@ -2,7 +2,7 @@
 /**
  * Imgur class
  *
- * The class holding the root upload method
+ * PHP version 7
  *
  * @category Imgur
  * @package  Imgur
