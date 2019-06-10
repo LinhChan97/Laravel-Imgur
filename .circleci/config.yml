@@ -18,15 +18,6 @@ jobs:
       #
       # - image: redis:2.8.19
 
-  # deploy:
-  #   docker:
-  #     - image: buildpack-deps:trusty
-  #     - run:
-  #         name: Deploy Master to Heroku
-  #         command: |
-  #           git push https://git.heroku.com/linhchan-laravel-imgur.git master
-
-
     steps:
       - checkout
       - run: sudo apt update # PHP CircleCI 2.0 Configuration File# PHP CircleCI 2.0 Configuration File sudo apt install zlib1g-dev libsqlite3-dev
@@ -47,7 +38,7 @@ jobs:
           paths:
             - ./vendor
       - run: vendor/bin/phpcs -n tests/
-      - run: vendor/bin/phpcs --report=summary tests
+      - run: vendor/bin/phpcs --report=summary tests/unit
       - run:
           name: "Run tests"
           command: vendor/bin/phpunit --coverage-xml=build/coverage/coverage-xml --log-junit=build/coverage/phpunit.junit.xml --testdox
