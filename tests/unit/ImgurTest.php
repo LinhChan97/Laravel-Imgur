@@ -31,8 +31,8 @@ use Illuminate\Support\Facades\Facade;
 class ImgurTest extends TestCase
 {
 
-    private static $_testImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png';
-
+    // private static $_testImage = 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/1200px-Apple_logo_black.svg.png';
+    private static $_testImage = 'https://www.w3schools.com/w3css/img_lights.jpg';
     private $_localFile = __DIR__.'/test.jpg';
 
     private $_object;
@@ -79,7 +79,7 @@ class ImgurTest extends TestCase
      */
     public function testUploadFileLocalSuccess()
     {
-        $file     = new \Illuminate\Http\UploadedFile($this->_localFile, 'test.jpg', null, null, null, true);
+        $file = new \Illuminate\Http\UploadedFile($this->_localFile, 'test.jpg', null, null, null, true);
         $expected = base64_encode(file_get_contents($file->path()));
         $result   = $this->_controller->fileType($file);
         $this->assertEquals($expected, $result);
