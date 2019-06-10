@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="phpunit.xsd"
+         cacheResult="true"
+         verbose="true">
+    <testsuites>
+        <testsuite name="unit">
+            <directory suffix="Test.php">tests/unit</directory>
+        </testsuite>
+        <testsuite name="feature">
+            <directory suffix="Test.php">tests/feature</directory>
+        </testsuite>
+        <testsuite name="end-to-end">
+            <directory suffix=".phpt">tests/end-to-end</directory>
+        </testsuite>
+    </testsuites>
+
+    <filter>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">src</directory>
+        </whitelist>
+    </filter>
+
+    <logging>
+        <log type="coverage-html"
+             target="tests/coverage/html"
+             showUncoveredFiles="true"
+             lowUpperBound="60"
+             highLowerBound="95" />
+        <log type="coverage-clover"
+             target="tests/coverage/clover.xml"
+             showUncoveredFiles="true" />
+        <log type="coverage-php"
+             target="tests/coverage/coverage.serialized"
+             showUncoveredFiles="true" />
+        <log type="coverage-text"
+             target="php://stdout"
+             showUncoveredFiles="true" />
+        <log type="testdox-html" target="tests/coverage/testdox.html" />
+        <log type="testdox-text" target="php://stdout" />
+    </logging>
+
+</phpunit>
