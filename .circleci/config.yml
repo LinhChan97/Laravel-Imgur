@@ -47,7 +47,7 @@ jobs:
           paths:
             - ./vendor
       - run: vendor/bin/phpcs -n tests/
-      - run: vendor/bin/phpcs --report=summary src tests
+      - run: vendor/bin/phpcs --report=summary tests
       - run:
           name: "Run tests"
           command: vendor/bin/phpunit --coverage-xml=build/coverage/coverage-xml --log-junit=build/coverage/phpunit.junit.xml --testdox
