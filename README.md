@@ -1,4 +1,4 @@
-Laravel - Imgur
+Laravel - Imgur [![CircleCI](https://circleci.com/gh/LinhChan97/Laravel-Imgur.svg?style=svg)](https://circleci.com/gh/LinhChan97/Laravel-Imgur)
 =======
 
 Note that this is a demo version
