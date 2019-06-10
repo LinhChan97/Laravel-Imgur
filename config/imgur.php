@@ -3,6 +3,8 @@ namespace Linhchan\Imgur\Config;
 
 /**
  * Imgur Config class
+ * 
+ * PHP version 7
  *
  * @category Imgur
  * @package  Imgur
