@@ -1,8 +1,31 @@
 <?php
+/**
+ * Imgur class
+ *
+ * The facade class
+ *
+ * @category Imgur
+ * @package  Imgur
+ * @author   Linh Van <vanmylink@gmail.com>
+ * @license  http://example.org/licenses/gpl-license.php GNU Public License
+ * @link     http://example.com/imgur/upload
+ */
+
 namespace Linhchan\Imgur\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
+/**
+ * Imgur Facade
+ *
+ * The facade class
+ *
+ * @category Imgur
+ * @package  Imgur
+ * @author   Linh Van <vanmylink@gmail.com>
+ * @license  http://example.org/licenses/gpl-license.php GNU Public License
+ * @link     http://example.com/imgur/upload
+ */
 class Imgur extends Facade
 {
 

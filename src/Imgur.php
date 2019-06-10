@@ -1,5 +1,15 @@
 <?php
-
+/**
+ * Imgur class
+ *
+ * The class holding the root upload method
+ *
+ * @category Imgur
+ * @package  Imgur
+ * @author   Linh Van <vanmylink@gmail.com>
+ * @license  http://example.org/licenses/gpl-license.php GNU Public License
+ * @link     http://example.com/imgur/upload
+ */
 namespace Linhchan\Imgur;
 
 use GuzzleHttp\Client;
@@ -39,19 +49,23 @@ class Imgur
     public $response;
     const VERSION = 'v3';
 
-    private $client_id;
+    private $_clientId;
 
-    private $client_secret;
+    private $_clientSecret;
 
-    private $image;
+    private $_image;
 
-
-    public function __construct($client_id, $client_secret=null)
+    /**
+     * Define _construct function.
+     * 
+     * @param string $_clientId     from Imgur account
+     * @param string $_clientSecret from Imgur account
+     */
+    public function __construct($_clientId, $_clientSecret = null)
     {
-        $this->client_id     = $client_id;
-        $this->client_secret = $client_secret;
-
-    }//end __construct()
+        $this->_clientId     = $_clientId;
+        $this->_clientSecret = $_clientSecret;
+    } //end __construct()
 
 
     /**
@@ -62,74 +76,71 @@ class Imgur
     public static function version()
     {
         return self::VERSION;
-
-    }//end version()
+    } //end version()
 
 
     /**
      * If concrete instance UploadedFile, it should transform base64, either return url.
      *
-     * @param  $image
+     * @param string $_image can be a link or upload file
+     * 
      * @return string
      */
-    public function fileType($image)
+    public function fileType($_image)
     {
-        if ($image instanceof UploadedFile) {
-            return base64_encode(file_get_contents($image->path()));
+        if ($_image instanceof UploadedFile) {
+            return base64_encode(file_get_contents($_image->path()));
         }
 
-        return $image;
-
-    }//end fileType()
+        return $_image;
+    } //end fileType()
 
 
     /**
      * Set headers.
      *
-     * @param  $headers
+     * @param string $headers headers of request
+     * 
      * @return $this
      */
     public function setHeaders($headers)
     {
         $this->headers = $headers;
         return $this;
-
-    }//end setHeaders()
-
+    } //end setHeaders()
 
     /**
      * If does not set headers, using default header, either return headers.
      *
      * @return array
      */
-    private function getHeaders()
+    private function _getHeaders()
     {
         if (empty($this->headers)) {
             return [
                 'headers' => [
-                    'authorization' => 'Client-ID '.$this->client_id,
+                    'authorization' => 'Client-ID ' . $this->_clientId,
                     'content-type'  => 'application/x-www-form-urlencoded',
                 ],
             ];
         }
 
         return $this->headers;
-
-    }//end getHeaders()
+    } //end _getHeaders()
 
 
     /**
      * Set form params.
      *
-     * @param  $params
+     * @param string $params form
+     * 
      * @return $this
      */
     public function setFormParams($params)
     {
         $this->params = $params;
         return $this;
-
-    }//end setFormParams()
+    } //end setFormParams()
 
 
     /**
@@ -137,108 +148,107 @@ class Imgur
      *
      * @return array
      */
-    private function getFormParams()
+    private function _getFormParams()
     {
         if (empty($this->params)) {
             return [
                 'form_params' => [
-                    'image' => $this->image,
+                    'image' => $this->_image,
                 ],
             ];
         }
 
         return $this->params;
+    } //end _getFormParams()
 
-    }//end getFormParams()
-
-
-    private function setImage($image)
+    /**
+     * Function set image
+     * 
+     * @param string $_image can be a link or upload file
+     * 
+     * @return array
+     */
+    private function _setImage($_image)
     {
-        $this->image = $image;
+        $this->_image = $_image;
         return $this;
-
-    }//end setImage()
+    } //end _setImage()
 
 
     /**
      * Main entrance point.
      *
-     * @param  $image
+     * @param string $_image can be a link or upload file
+     *
      * @return $this
      */
-    public function upload($image)
+    public function upload($_image)
     {
         $client = new Client();
-        $this->setImage($this->fileType($image));
-        $response = $client->request('POST', $this->url, array_merge($this->getHeaders(), $this->getFormParams()));
-        $this->setResponse(json_decode($response->getBody()->getContents()));
+        $this->_setImage($this->fileType($_image));
+        $response = $client->request('POST', $this->url, array_merge($this->_getHeaders(), $this->_getFormParams()));
+        $this->_setResponse(json_decode($response->getBody()->getContents()));
         return $this;
-
-    }//end upload()
+    } //end upload()
 
 
     /**
-     * get uploaded image link.
+     * Function get uploaded _image link.
      *
      * @return mixed
      */
     public function link()
     {
         return $this->response->data->link;
-
-    }//end link()
+    } //end link()
 
 
     /**
-     * get uploaded image size.
+     * Function get uploaded _image size.
      *
      * @return mixed
      */
     public function filesize()
     {
         return $this->response->data->size;
-
-    }//end filesize()
+    } //end filesize()
 
 
     /**
-     * get uploaded image type.
+     * Function get uploaded _image type.
      *
      * @return mixed
      */
     public function type()
     {
         return $this->response->data->type;
-
-    }//end type()
+    } //end type()
 
 
     /**
-     * get uploaded image width.
+     * Function get uploaded _image width.
      *
      * @return mixed
      */
     public function width()
     {
         return $this->response->data->width;
-
-    }//end width()
+    } //end width()
 
 
     /**
-     * get uploaded image height.
+     * Function get uploaded _image height.
      *
      * @return mixed
      */
     public function height()
     {
         return $this->response->data->height;
-
-    }//end height()
+    } //end height()
 
 
     /**
-     * get uploaded image usual parameters.
+     * Function get uploaded _image usual parameters.
      *
      * @return mixed
      */
@@ -251,23 +261,28 @@ class Imgur
             'width'    => $this->width(),
             'height'   => $this->height(),
         ];
+    } //end usual()
 
-    }//end usual()
-
-
-    private function setResponse($response)
+    /**
+     * Function set response.
+     * 
+     * @param string $response image
+     *
+     * @return $this
+     */
+    private function _setResponse($response)
     {
         $this->response = $response;
         return $this;
-
-    }//end setResponse()
+    } //end _setResponse()
 
 
     /**
-     * Imgur image size.
+     * Imgur _image size.
      *
-     * @param  $url
-     * @param  $size
+     * @param string $url  url image
+     * @param string $size size of image
+     * 
      * @return string
      */
     public function size($url, $size)
@@ -277,10 +292,9 @@ class Imgur
         }
 
         $delimiter = 'https://i.imgur.com/';
-        $image     = explode('.', explode($delimiter, $url)[1]);
-        return $delimiter.$image[0].$size.'.'.$image[1];
-
-    }//end size()
+        $_image     = explode('.', explode($delimiter, $url)[1]);
+        return $delimiter . $_image[0] . $size . '.' . $_image[1];
+    } //end size()
 
 
 }//end class

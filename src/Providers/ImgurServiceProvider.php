@@ -1,5 +1,15 @@
 <?php
-
+/**
+ * Imgur Service Provider class
+ *
+ * The class provide service
+ *
+ * @category Imgur
+ * @package  Imgur
+ * @author   Linh Van <vanmylink@gmail.com>
+ * @license  http://example.org/licenses/gpl-license.php GNU Public License
+ * @link     http://example.com/imgur/upload
+ */
 namespace Linhchan\Imgur;
 
 use Illuminate\Support\ServiceProvider;
