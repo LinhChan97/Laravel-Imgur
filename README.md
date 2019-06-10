@@ -44,7 +44,7 @@ Documentation
 ------------
 
 ```bash
-If you need more information, please go directly to https://packagist.org/packages/linhchan/imgur
+If you need more information, please go directly to [Documentation](https://packagist.org/packages/linhchan/imgur)
 ```
 
 Test
