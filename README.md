@@ -1,4 +1,6 @@
 Laravel - Imgur [![CircleCI](https://circleci.com/gh/LinhChan97/Laravel-Imgur.svg?style=svg)](https://circleci.com/gh/LinhChan97/Laravel-Imgur)
+[![codecov.io](http://codecov.io/github/mirumee/saleor/coverage.svg?branch=master)](http://codecov.io/github/mirumee/saleor?branch=master)
+
 =======
 
 Note that this is a demo version
