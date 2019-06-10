@@ -19,8 +19,12 @@ jobs:
       # - image: redis:2.8.19
     steps:
       - checkout
-      - run: sudo apt update # PHP CircleCI 2.0 Configuration File# PHP CircleCI 2.0 Configuration File sudo apt install zlib1g-dev libsqlite3-dev
-      - run: sudo docker-php-ext-install zip
+      - run: 
+          name: "Update system"
+          command: sudo apt update # PHP CircleCI 2.0 Configuration File# PHP CircleCI 2.0 Configuration File sudo apt install zlib1g-dev libsqlite3-dev
+      - run: 
+          name: "Install php docker container"
+          command: sudo docker-php-ext-install zip
 
       # Download and cache dependencies
       - restore_cache:
@@ -30,13 +34,17 @@ jobs:
             # fallback to using the latest cache if no exact match is found
             - v1-dependencies-
 
-      - run: composer install -n --prefer-dist
+      - run: 
+          name: "Composer install"
+          command: composer install -n --prefer-dist
 
       - save_cache:
           key: v1-dependencies-{{ checksum "composer.json" }}
           paths:
             - ./vendor
-      - run: vendor/bin/phpcs -n tests/unit
+      - run: 
+          name: "Run phpcs fixer"
+          command: vendor/bin/phpcs -n tests/unit
       - run:
           name: "Run tests"
           command: vendor/bin/phpunit --coverage-xml=build/coverage/coverage-xml --log-junit=build/coverage/phpunit.junit.xml --testdox
@@ -49,4 +57,15 @@ jobs:
           name: Deploy Master to Heroku
           command: |
             git push https://git.heroku.com/linhchan-laravel-imgur.git master
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - build
+      - deploy:
+          requires:
+            - build
+          filters:
+            branches:
+              only: master
 
