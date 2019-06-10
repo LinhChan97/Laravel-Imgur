@@ -1,5 +1,8 @@
 Laravel - Imgur [![CircleCI](https://circleci.com/gh/LinhChan97/Laravel-Imgur.svg?style=svg)](https://circleci.com/gh/LinhChan97/Laravel-Imgur)
 [![codecov.io](https://codecov.io/gh/linhchan97/laravel-imgur/branch/master/graphs/badge.svg?branch=master)](https://codecov.io/gh/LinhChan97/Laravel-Imgur/branch/master)
+[![Latest Stable Version](https://poser.pugx.org/linhchan/imgur/v/stable)](https://packagist.org/packages/linhchan/imgur)
+[![Total Downloads](https://poser.pugx.org/linhchan/imgur/downloads)](https://packagist.org/packages/linhchan/imgur)
+[![License](https://poser.pugx.org/linhchan/imgur/license)](https://packagist.org/packages/linhchan/imgur)
 
 =======
 
@@ -73,4 +76,4 @@ class ImgurController extends Controller
         //]
     }
 }
-``
+
