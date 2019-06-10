@@ -50,9 +50,9 @@ jobs:
       - run:
           name: "Run tests"
           command: vendor/bin/phpunit --coverage-xml=build/coverage/coverage-xml --log-junit=build/coverage/phpunit.junit.xml --testdox
-       - run:
-        name: Upload coverage report
-        command: bash <(curl -s https://codecov.io/bash) -t "${CODECOV_TOKEN}"
+      - run:
+          name: Upload coverage report
+          command: bash <(curl -s https://codecov.io/bash) -t "${CODECOV_TOKEN}"
   deploy:
     docker:
       - image: buildpack-deps:trusty
