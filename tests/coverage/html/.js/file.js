@@ -1,6 +1,6 @@
-  $(
+$(
     function () {
-        var $window     = $(window)
+        var $window   = $(window)
         , $top_link   = $('#toplink')
         , $body       = $('body, html')
         , offset      = $('#code').offset().top
@@ -12,20 +12,21 @@
                     if (!$target.data('popover-hover')) {
                         $target.popover('hide');
                     }
-                }, 300
+                },
+                300
             );
         };
 
         $top_link.hide().click(
             function (event) {
                 event.preventDefault();
-                $body.animate({scrollTop:0}, 800);
+                $body.animate({scrollTop: 0}, 800);
             }
         );
 
         $window.scroll(
             function () {
-                if($window.scrollTop() > offset) {
+                if ($window.scrollTop() > offset) {
                     $top_link.fadeIn();
                 } else {
                       $top_link.fadeOut();

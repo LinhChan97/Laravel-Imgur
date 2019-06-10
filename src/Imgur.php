@@ -10,7 +10,7 @@ use Illuminate\Http\Request;
 /**
  * Imgur class
  *
- * The class holding the root upload method 
+ * The class holding the root upload method
  *
  * @category Imgur
  * @package  Imgur
@@ -20,20 +20,40 @@ use Illuminate\Http\Request;
  */
 class Imgur
 {
+
     protected $url = 'https://api.imgur.com/3/image';
+
     protected $headers = [];
+
     protected $params = [];
-    protected $size = ['s', 'b', 't', 'm', 'l', 'h'];
+
+    protected $size = [
+        's',
+        'b',
+        't',
+        'm',
+        'l',
+        'h',
+    ];
+
     public $response;
     const VERSION = 'v3';
+
     private $client_id;
+
     private $client_secret;
+
     private $image;
-    public function __construct($client_id, $client_secret = null)
+
+
+    public function __construct($client_id, $client_secret=null)
     {
-        $this->client_id = $client_id;
+        $this->client_id     = $client_id;
         $this->client_secret = $client_secret;
-    }
+
+    }//end __construct()
+
+
     /**
      * Check API version.
      *
@@ -42,7 +62,10 @@ class Imgur
     public static function version()
     {
         return self::VERSION;
-    }
+
+    }//end version()
+
+
     /**
      * If concrete instance UploadedFile, it should transform base64, either return url.
      *
@@ -54,8 +77,12 @@ class Imgur
         if ($image instanceof UploadedFile) {
             return base64_encode(file_get_contents($image->path()));
         }
+
         return $image;
-    }
+
+    }//end fileType()
+
+
     /**
      * Set headers.
      *
@@ -66,7 +93,10 @@ class Imgur
     {
         $this->headers = $headers;
         return $this;
-    }
+
+    }//end setHeaders()
+
+
     /**
      * If does not set headers, using default header, either return headers.
      *
@@ -77,13 +107,17 @@ class Imgur
         if (empty($this->headers)) {
             return [
                 'headers' => [
-                    'authorization' => 'Client-ID ' . $this->client_id,
-                    'content-type' => 'application/x-www-form-urlencoded',
-                ]
+                    'authorization' => 'Client-ID '.$this->client_id,
+                    'content-type'  => 'application/x-www-form-urlencoded',
+                ],
             ];
         }
+
         return $this->headers;
-    }
+
+    }//end getHeaders()
+
+
     /**
      * Set form params.
      *
@@ -94,7 +128,10 @@ class Imgur
     {
         $this->params = $params;
         return $this;
-    }
+
+    }//end setFormParams()
+
+
     /**
      * If does not set form, using default form, either return form.
      *
@@ -105,17 +142,24 @@ class Imgur
         if (empty($this->params)) {
             return [
                 'form_params' => [
-                    'image' => $this->image
-                ]
+                    'image' => $this->image,
+                ],
             ];
         }
+
         return $this->params;
-    }
+
+    }//end getFormParams()
+
+
     private function setImage($image)
     {
         $this->image = $image;
         return $this;
-    }
+
+    }//end setImage()
+
+
     /**
      * Main entrance point.
      *
@@ -129,7 +173,10 @@ class Imgur
         $response = $client->request('POST', $this->url, array_merge($this->getHeaders(), $this->getFormParams()));
         $this->setResponse(json_decode($response->getBody()->getContents()));
         return $this;
-    }
+
+    }//end upload()
+
+
     /**
      * get uploaded image link.
      *
@@ -138,7 +185,10 @@ class Imgur
     public function link()
     {
         return $this->response->data->link;
-    }
+
+    }//end link()
+
+
     /**
      * get uploaded image size.
      *
@@ -147,7 +197,10 @@ class Imgur
     public function filesize()
     {
         return $this->response->data->size;
-    }
+
+    }//end filesize()
+
+
     /**
      * get uploaded image type.
      *
@@ -156,7 +209,10 @@ class Imgur
     public function type()
     {
         return $this->response->data->type;
-    }
+
+    }//end type()
+
+
     /**
      * get uploaded image width.
      *
@@ -165,7 +221,10 @@ class Imgur
     public function width()
     {
         return $this->response->data->width;
-    }
+
+    }//end width()
+
+
     /**
      * get uploaded image height.
      *
@@ -174,7 +233,10 @@ class Imgur
     public function height()
     {
         return $this->response->data->height;
-    }
+
+    }//end height()
+
+
     /**
      * get uploaded image usual parameters.
      *
@@ -183,18 +245,24 @@ class Imgur
     public function usual()
     {
         return [
-            'link' => $this->link(),
+            'link'     => $this->link(),
             'filesize' => $this->filesize(),
-            'type' => $this->type(),
-            'width' => $this->width(),
-            'height' => $this->height(),
+            'type'     => $this->type(),
+            'width'    => $this->width(),
+            'height'   => $this->height(),
         ];
-    }
+
+    }//end usual()
+
+
     private function setResponse($response)
     {
         $this->response = $response;
         return $this;
-    }
+
+    }//end setResponse()
+
+
     /**
      * Imgur image size.
      *
@@ -207,8 +275,12 @@ class Imgur
         if (!in_array($size, $this->size)) {
             throw new InvalidArgumentException("Imgur does not support ' $size ' type.");
         }
+
         $delimiter = 'https://i.imgur.com/';
-        $image = explode('.', explode($delimiter, $url)[1]);
-        return $delimiter . $image[0] . $size . '.' . $image[1];
-    }
-}
+        $image     = explode('.', explode($delimiter, $url)[1]);
+        return $delimiter.$image[0].$size.'.'.$image[1];
+
+    }//end size()
+
+
+}//end class

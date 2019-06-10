@@ -46,7 +46,7 @@ jobs:
           key: v1-dependencies-{{ checksum "composer.json" }}
           paths:
             - ./vendor
-      - run: vendor/bin/phpcs -n src/ tests/
+      - run: vendor/bin/phpcs -n tests/
       - run: vendor/bin/phpcs --report=summary src tests
       - run:
           name: "Run tests"

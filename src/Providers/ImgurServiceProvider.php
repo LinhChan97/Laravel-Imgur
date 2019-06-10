@@ -18,6 +18,8 @@ use Linhchan\Imgur\ImgurController;
  */
 class ImgurServiceProvider extends ServiceProvider
 {
+
+
     /**
      * Register services.
      *
@@ -28,12 +30,14 @@ class ImgurServiceProvider extends ServiceProvider
         $this->app->bind(
             Imgur::class,
             function ($app) {
-                $client_id = $app['config']->get('imgur.client_id');
+                $client_id     = $app['config']->get('imgur.client_id');
                 $client_secret = $app['config']->get('imgur.client_secret');
                 return new Imgur($client_id, $client_secret);
             }
         );
-    }
+
+    }//end register()
+
 
     /**
      * Bootstrap services.
@@ -44,9 +48,12 @@ class ImgurServiceProvider extends ServiceProvider
     {
         $this->publishes(
             [
-                dirname(__DIR__, 2) . '/config/imgur.php' => config_path('imgur.php'),
+                dirname(__DIR__, 2).'/config/imgur.php' => config_path('imgur.php'),
             ],
             'config'
         );
-    }
-}
+
+    }//end boot()
+
+
+}//end class
