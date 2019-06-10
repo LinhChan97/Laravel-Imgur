@@ -18,13 +18,13 @@ jobs:
       #
       # - image: redis:2.8.19
 
-  deploy:
-    docker:
-      - image: buildpack-deps:trusty
-      - run:
-          name: Deploy Master to Heroku
-          command: |
-            git push https://git.heroku.com/linhchan-laravel-imgur.git master
+  # deploy:
+  #   docker:
+  #     - image: buildpack-deps:trusty
+  #     - run:
+  #         name: Deploy Master to Heroku
+  #         command: |
+  #           git push https://git.heroku.com/linhchan-laravel-imgur.git master
 
 
     steps:
