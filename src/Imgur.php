@@ -47,6 +47,7 @@ class Imgur
     ];
 
     public $response;
+    
     const VERSION = 'v3';
 
     private $_clientId;
