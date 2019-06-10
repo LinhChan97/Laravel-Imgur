@@ -11,7 +11,11 @@ composer require linhchan/imgur
 ```
 
 ```bash
-Binding class using Facade in laravel
+In config/app.php
+Add service provider to your app.php [Providers]
+Linhchan\Imgur\ImgurServiceProvider::class,
+
+Binding class using Facade in laravel app.php [Aliases]
 'Imgur' => Linhchan\Imgur\Facades\Imgur::class,
 ```
 
@@ -67,7 +71,4 @@ class ImgurController extends Controller
         //]
     }
 }
-```
-
-If you want to implement the interface, you can require this package and
-implement `Linhchan\Imgur\Imgur` in your code.
+``
