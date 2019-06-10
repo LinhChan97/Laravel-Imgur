@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <build time="Mon Jun 10 1:33:04 GMT+0000 2019" phpunit="7.5.12" coverage="6.1.4">
+    <runtime name="PHP" version="7.2.19-0ubuntu0.18.04.1" url="https://secure.php.net/"/>
+    <driver name="xdebug" version="2.6.0"/>
+  </build>
+  <project source="/home/linh/Documents/composerws/linhchan/imgur/src">
+    <tests>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testUploadFileLocalSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testGetSpecificFileSize" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testGetExceptionWithWrongSize" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testSeeVersionSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testUploadFileSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testSetUpRequestInfoSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testUploadImageSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testGetLinkSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testGetSizeSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testGetTypeSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testGetWidthSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testGetHeightSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testGetUsualSuccess" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testGetExceptionWithHeader" size="unknown" result="0" status="PASSED"/>
+      <test name="Linh\Imgur\Test\Unit\ImgurTest::testGetExceptionWithParam" size="unknown" result="0" status="PASSED"/>
+    </tests>
+    <directory name="/">
+      <totals>
+        <lines total="283" comments="113" code="170" executable="54" executed="42" percent="77.78"/>
+        <methods count="20" tested="17" percent="85.00"/>
+        <functions count="0" tested="0" percent="0"/>
+        <classes count="3" tested="1" percent="33.33"/>
+        <traits count="0" tested="0" percent="0"/>
+      </totals>
+      <directory name="Facades">
+        <totals>
+          <lines total="17" comments="5" code="12" executable="1" executed="0" percent="0.00"/>
+          <methods count="1" tested="0" percent="0.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="1" tested="0" percent="0.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="Imgur.php" href="Facades/Imgur.php.xml">
+          <totals>
+            <lines total="17" comments="5" code="12" executable="1" executed="0" percent="0.00"/>
+            <methods count="1" tested="0" percent="0.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <directory name="Providers">
+        <totals>
+          <lines total="52" comments="21" code="31" executable="11" executed="0" percent="0.00"/>
+          <methods count="2" tested="0" percent="0.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="1" tested="0" percent="0.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+        <file name="ImgurServiceProvider.php" href="Providers/ImgurServiceProvider.php.xml">
+          <totals>
+            <lines total="52" comments="21" code="31" executable="11" executed="0" percent="0.00"/>
+            <methods count="2" tested="0" percent="0.00"/>
+            <functions count="0" tested="0" percent="0"/>
+            <classes count="1" tested="0" percent="0.00"/>
+            <traits count="0" tested="0" percent="0"/>
+          </totals>
+        </file>
+      </directory>
+      <file name="Imgur.php" href="Imgur.php.xml">
+        <totals>
+          <lines total="214" comments="87" code="127" executable="42" executed="42" percent="100.00"/>
+          <methods count="17" tested="17" percent="100.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="1" tested="1" percent="100.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+    </directory>
+  </project>
+</phpunit>
