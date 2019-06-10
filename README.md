@@ -3,6 +3,7 @@ Laravel - Imgur
 [![CircleCI](https://circleci.com/gh/LinhChan97/Laravel-Imgur.svg?style=svg)](https://circleci.com/gh/LinhChan97/Laravel-Imgur)
 [![codecov.io](https://codecov.io/gh/linhchan97/laravel-imgur/branch/master/graphs/badge.svg?branch=master)](https://codecov.io/gh/LinhChan97/Laravel-Imgur/branch/master)
 [![Latest Stable Version](https://poser.pugx.org/linhchan/imgur/v/stable)](https://packagist.org/packages/linhchan/imgur)
+[![Latest Unstable Version](https://poser.pugx.org/linhchan/imgur/v/unstable)](https://packagist.org/packages/linhchan/imgur)
 [![Total Downloads](https://poser.pugx.org/linhchan/imgur/downloads)](https://packagist.org/packages/linhchan/imgur)
 [![License](https://poser.pugx.org/linhchan/imgur/license)](https://packagist.org/packages/linhchan/imgur)
 
@@ -39,6 +40,19 @@ Add your Imgur client id and client secret to you .env config
 IMGUR_CLIENT_ID=
 IMGUR_CLIENT_SECRET=
 ```
+Documentation
+------------
+
+```bash
+If you need more information, please go directly to https://packagist.org/packages/linhchan/imgur
+```
+
+Test
+------------
+
+```bash
+$ phpunit
+```
 
 
 Usage
@@ -53,7 +67,7 @@ class ImgurController extends Controller
 {
     public function index()
     {
-        //test Imgur Facade
+        // Test Imgur Facade
         $uploadFile = 'https://www.w3schools.com/w3css/img_lights.jpg';
         $image = Imgur::upload($uploadFile);
 
