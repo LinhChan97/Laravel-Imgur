@@ -42,11 +42,7 @@ IMGUR_CLIENT_SECRET=
 ```
 Documentation
 ------------
-
-```bash
-If you need more information, please go directly to 
-* [Document](http://packagist.org/packages/linhchan/imgur)
-``` 
+You can get for more information at [Documentation](https://packagist.org/packages/linhchan/imgur)
 
 Test
 ------------
