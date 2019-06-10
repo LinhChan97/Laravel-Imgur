@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1560141398">
-  <project timestamp="1560141398">
+<coverage generated="1560141891">
+  <project timestamp="1560141891">
     <package name="Linhchan\Imgur\Facades">
       <file name="/home/linh/Documents/composerws/linhchan/imgur/src/Facades/Imgur.php">
         <class name="Linhchan\Imgur\Facades\Imgur" namespace="Linhchan\Imgur\Facades" fullPackage="Imgur" category="Imgur" package="Imgur">

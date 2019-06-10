@@ -3,6 +3,8 @@
 # Check https://circleci.com/docs/2.0/language-php/ for more details
 #
 version: 2
+orbs:
+  codecov: codecov/codecov@1.0.2
 jobs:
   build:
     docker:
@@ -48,6 +50,8 @@ jobs:
       - run:
           name: "Run tests"
           command: vendor/bin/phpunit --coverage-xml=build/coverage/coverage-xml --log-junit=build/coverage/phpunit.junit.xml --testdox
+      - codecov/upload:
+          file: build/coverage/coverage-report/index.html
   deploy:
     docker:
       - image: buildpack-deps:trusty
