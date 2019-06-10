@@ -1,5 +1,5 @@
 Laravel - Imgur [![CircleCI](https://circleci.com/gh/LinhChan97/Laravel-Imgur.svg?style=svg)](https://circleci.com/gh/LinhChan97/Laravel-Imgur)
-[![codecov.io](http://codecov.io/github/mirumee/saleor/coverage.svg?branch=master)](http://codecov.io/github/mirumee/saleor?branch=master)
+[![codecov.io](https://codecov.io/gh/linhchan97/laravel-imgur/branch/master/graphs/badge.svg?branch=master)](https://codecov.io/gh/LinhChan97/Laravel-Imgur/branch/master)
 
 =======
 
